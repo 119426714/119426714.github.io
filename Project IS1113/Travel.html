@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="em">
+
+ <!DOCTYPE>
+
+
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#container {
+  overflow: hidden;
+  width: 800px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+}
+
+#imgs {
+  display: block;
+  padding: 0;
+  width: 200%;
+}
+
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="header">
+  <h1>My Travel </h1>
+
+
+</div>
+
+
+
+<div class="container">
+ <span class="title">Travel</span>
+  <ul id="imgs">
+    <li><img src="ios.jpg" alt="" /></li>
+    <li><img src="Paros.jpg" alt="" /></li>
+    <li><img src= "Party.jpg" alt="" /></li>
+    <li><img src= "Mykonos.jpg" alt="" /></li>
+    <li><img src= "inida1.jpg" alt="" /></li>
+    <li><img src="india2.jpg" alt="" /></li>
+    <li><img src="inida3.jpg" alt="" /></li>
+    <li><img src="inida4.jpg" alt="" /></li>
+    <li><img src= "indiaa.jpg" alt="" /></li>
+    <li><img src= "indiab.jpg" alt="" /></li>
+    <li><img src="indiac.jpg" alt="" /></li>
+    <li><img src="greecea.jpg" alt="" /></li>
+    <li><img src="greeceb.jpg" alt="" /></li>
+
+
+
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/ImageScroll.js"></script>
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div>
+</body>
+</html>
+
+
+<body>
+<br>
+<br>
+<br>
+
+
+   </head>
+   
+   <style>
+     body {
+      background-color: lightblue
+    }
+div {
+ backgroundcolor: rgb(182, 216, 216)
+}
+</style>
+
+<body>
+  <h1 align="center" style="color:white;">Travel</h1>
+ 
+  <div align="center">
+   <p> <b>Kolkata India</b>  </p>
+     
+      <p>Went to Kolkata in April 2016 as a part of HOPE's fundraising programme.</p>
+      <p>I raised over 3000 Euro for the children of Kolkata.</p>
+      <p>Although Kolkata is a poverty striken City, it is still undoubtedly one of the most interesting Cities i have or ever will visit.</p>
+      <p>One street with shanty houses and the next street with designer shops.</p>
+      <p> The contrast between poor and rich is what makes this city so facinating.</p>
+      <p>Seeing things such as people living on the train tracks to going to a million euor temple in which they all pray is truly spectacular.</p
+     <p> After college i plan to fundraise more and visit and voluntere in Kolkata for an entire summer.</p>
+      
+      
+   <p> <b> Greece</b>  </p>
+
+      <p>-In the summer of 2020 i plan to visit Ios, Santorini, Mykonos and Paros.</p>
+      <p> We plan to leave Dublin on the 8th of june flyn into Athens and get the ferry to Mykonos for 4 days.</p>
+      <p> We will then get the ferry to Paros for 3 days.</p>
+      <p>After Paros we will get the ferry to Santorini and stay their for 2 nights.</p>
+      <p> Then on the 18th we are going to Ios until July 1st.</p>
+      
+      
+ 
+ 
+  <a href = "index.html"> Return To Home </a>
+
+ 
+
+  </body>
+
+</html>
